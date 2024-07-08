@@ -1,21 +1,16 @@
 {
   "toDos": [
     {
-      "title": "to do 1",
-      "description": "do somethings 1",
-      "id": "1"
-    },
-    {
-      "id": "2",
       "title": "to do 2",
       "description": "do somethings 2",
-      "status": false
+      "status": true,
+      "id": "2"
     },
     {
-      "id": "3",
       "title": "to do 3",
       "description": "do somethings 3",
-      "status": false
+      "status": false,
+      "id": "3"
     },
     {
       "id": "4",

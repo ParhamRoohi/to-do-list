@@ -12,29 +12,29 @@ function Form({
 }) {
   return (
     <>
-      <form>
-        <input
-          type="text"
-          placeholder="Title"
-          onChange={(e) => setTitle(e.target.value)}
-          value={title}
-        />
-        <input
-          type="text"
-          placeholder="Description"
-          onChange={(e) => setDescription(e.target.value)}
-          value={description}
-        />
-        {showbtn ? (
-          <button type="button" onClick={(e) => editTodo(id, e)}>
-            Edit
-          </button>
-        ) : (
-          <button type="button" onClick={addTodo}>
-            Add
-          </button>
-        )}
-      </form>
+ <form>
+      <input
+        type="text"
+        placeholder="Title"
+        onChange={(e) => setTitle(e.target.value)}
+        value={title}
+      />
+      <input
+        type="text"
+        placeholder="Description"
+        onChange={(e) => setDescription(e.target.value)}
+        value={description}
+      />
+      {showbtn ? (
+        <button type="button" onClick={(e) => editTodo(id, e)}>
+          Submit
+        </button>
+      ) : (
+        <button type="button" onClick={addTodo}>
+          Add
+        </button>
+      )}
+    </form>
     </>
   );
 }
